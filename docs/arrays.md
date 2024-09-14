@@ -41,3 +41,13 @@ An array can be operated upon in several different ways. The following tables pr
 | **Mapping**   | A new array is created by applying a function to each element of the original array.                                                                                                               |
 | **Reducing**  | By repeatedly applying a function, all elements of an array are aggregated into a single value.                                                                                                    |
 
+## Reading from Array
+
+To read an individual element from an array we can choose the position we want to access via an index. In most programming languages, reading or accessing elements of an array involves retrieving the value at a specific index. 
+An array (or list in Python) is an indexed data structure, so accessing any element by its index is usually an **O(1)** operation. 
+
+Because each index of arr is mapped to a RAM address, accessing a single element in an array is always instant. In spite of the size of the input array, accessing a single element takes the same amount of time. In terms of time complexity, this operation is considered O(1).
+
+<p align="center" width="100%">
+<img src="../images/array-with-address-pointer.png" alt="reading values from the array">
+</p>
