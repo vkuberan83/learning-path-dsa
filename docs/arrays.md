@@ -46,7 +46,10 @@ An array can be operated upon in several different ways. The following tables pr
 To read an individual element from an array we can choose the position we want to access via an index. In most programming languages, reading or accessing elements of an array involves retrieving the value at a specific index. 
 An array (or list in Python) is an indexed data structure, so accessing any element by its index is usually an **O(1)** operation. 
 
-Because each index of arr is mapped to a RAM address, accessing a single element in an array is always instant. In spite of the size of the input array, accessing a single element takes the same amount of time. In terms of time complexity, this operation is considered O(1).
+Because each index of arr is mapped to a **RAM** address, accessing a single element in an array is always instant. In spite of the size of the input array, accessing a single element takes the same amount of time. In terms of time complexity, this operation is considered **O(1)**.
+
+As shown in the image below, an array of integers is represented in memory in the following manner. A specific memory address is assigned to each element of the array, and these addresses increase in multiples of 4 because integers occupy four bytes on average. Additionally, the image shows that each array element has a pointer to its memory address (**ptr_**), and the array is stored consecutively in memory.
+The visualization explains how arrays are stored in contiguous memory blocks, how memory addressing works, and how data type size affects memory allocation.
 
 <p align="center" width="100%">
 <img src="../images/array-with-address-pointer.png" alt="reading values from the array">
