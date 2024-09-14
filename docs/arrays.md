@@ -6,10 +6,10 @@ The array data structure is one of the most commonly used data structures. Array
 An array is a collection of elements that are all of the same data type and are stored in contiguous locations within memory. An array provides random access to elements through the use of an index, which is used to locate elements in an array.
 
 <p align="center" width="100%">
-<img src="../images/array-of-integers.png" alt="Array of Integers">
+<img src="../images/array-of-integers.png" alt="array of integers">
 </p>
 
-### Where arrays are used?
+## Where arrays are used?
 Arrays are used in a wide variety of applications. It would take a long time to list all of them; I have just chosen a few to illustrate my point.
 * **Storing and accessing sequential data:** An array can be used to store and access sequential data elements, such as movie or product ratings, stock prices, and employee records, etc.,
 * **Sorting and Searching Algorithms:** The use of arrays is common in algorithms that involve sorting and searching information. In addition, the fact that they are indexed makes it possible to implement classic algorithms efficiently.
@@ -17,3 +17,32 @@ Arrays are used in a wide variety of applications. It would take a long time to 
 * **Lookup Tables and Caching:** For fast lookups, arrays are used, where the index corresponds to the key. Hash maps and caches are common examples of lookup tables that are implemented using arrays. 
 * **Graphs and Trees (Adjacency Matrices):** Arrays can be used to represent graphs and tree structures, particularly for compact representations of connections between nodes.
 * **Handling Multidimensional Data:** Arrays (often referred to as tensors or multidimensional arrays) are used to represent data with more than two dimensions in domains such as machine learning and scientific computing.
+
+## Structure of Array
+
+Arrays are finite collections of similar elements located adjacently in memory. Arrays containing n elements are referenced by indices ranging from 0 to n - 1. As an example, the elements of an array arr[n] containing n elements are denoted as arr[0], arr[1], arr[2], ...., arr[n-1], where 0 is the lower bound and n-1 is the upper bound. In this example, 0, 1, 2, etc., represent array indices.
+
+<p align="center" width="100%">
+<img src="../images/array-indexs.png" alt="array of indexs">
+</p>
+
+An array can be operated upon in several different ways. The following tables provide a list of operations.
+
+<table style="width:960px">
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+  </tr>
+  <tr>
+    <td>Row 1</td>
+    <td>Row 1</td>
+  </tr>
+  <tr>
+    <td>Row 2</td>
+    <td>Row 2</td>
+  </tr>
+  <tr>
+    <td>Row 3</td>
+    <td>Row 3</td>
+  </tr>
+</table>
