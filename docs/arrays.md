@@ -28,21 +28,16 @@ Arrays are finite collections of similar elements located adjacently in memory. 
 
 An array can be operated upon in several different ways. The following tables provide a list of operations.
 
-<table style="width:960px">
-  <tr>
-    <th>Column 1</th>
-    <th>Column 2</th>
-  </tr>
-  <tr>
-    <td>Row 1</td>
-    <td>Row 1</td>
-  </tr>
-  <tr>
-    <td>Row 2</td>
-    <td>Row 2</td>
-  </tr>
-  <tr>
-    <td>Row 3</td>
-    <td>Row 3</td>
-  </tr>
-</table>
+| **Operation** | **Description**                                                                                                                                                                                    | 
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Traversal** | Each element of the array is accessed and visited one by one, usually in a loop (e.g., for, while, or forEach).                                                                                    |
+| **Insertion** | A new element is added at a specific position in the array. Some languages require resizing arrays if they are full.                                                                               |
+| **Deletion**  | The removal of an element from an array may be followed by resizing the array or shifting remaining elements to maintain the order of the array.                                                   |
+| **Searching** | Locating an element in an array by its index. Depending on whether the array is sorted, the search can be linear or binary.                                                                        |
+| **Sorting**   | Rearranging the elements of an array in an ascending or descending order. In order to maximize efficiency, sorting algorithms such as **Bubble Sort**, **Merge Sort**, or **Quick Sort** are used. |
+| **Merging**   | Combining two or more arrays into a single array.                                                                                                                                                  |
+| **Reversing** | Reversing the order of the elements in the array, so that the last element becomes the first element and vice versa.                                                                               |
+| **Filtering** | A new array is created with elements that satisfy a predicate function.                                                                                                                            |
+| **Mapping**   | A new array is created by applying a function to each element of the original array.                                                                                                               |
+| **Reducing**  | By repeatedly applying a function, all elements of an array are aggregated into a single value.                                                                                                    |
+
