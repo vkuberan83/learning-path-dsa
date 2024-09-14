@@ -1,2 +1,2 @@
-# learning-path-dsa
+# Learning Path - DSA
 Learning path for DSA
