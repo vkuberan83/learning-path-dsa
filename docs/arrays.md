@@ -6,10 +6,10 @@ The array data structure is one of the most commonly used data structures. Array
 An array is a collection of elements that are all of the same data type and are stored in contiguous locations within memory. An array provides random access to elements through the use of an index, which is used to locate elements in an array.
 
 <p align="center" width="100%">
-<img src="../images/array-of-integers.png" alt="Array of Integers">
+<img src="../images/array-of-integers.png" alt="array of integers">
 </p>
 
-### Where arrays are used?
+## Where arrays are used?
 Arrays are used in a wide variety of applications. It would take a long time to list all of them; I have just chosen a few to illustrate my point.
 * **Storing and accessing sequential data:** An array can be used to store and access sequential data elements, such as movie or product ratings, stock prices, and employee records, etc.,
 * **Sorting and Searching Algorithms:** The use of arrays is common in algorithms that involve sorting and searching information. In addition, the fact that they are indexed makes it possible to implement classic algorithms efficiently.
@@ -17,3 +17,40 @@ Arrays are used in a wide variety of applications. It would take a long time to 
 * **Lookup Tables and Caching:** For fast lookups, arrays are used, where the index corresponds to the key. Hash maps and caches are common examples of lookup tables that are implemented using arrays. 
 * **Graphs and Trees (Adjacency Matrices):** Arrays can be used to represent graphs and tree structures, particularly for compact representations of connections between nodes.
 * **Handling Multidimensional Data:** Arrays (often referred to as tensors or multidimensional arrays) are used to represent data with more than two dimensions in domains such as machine learning and scientific computing.
+
+## Structure of Array
+
+Arrays are finite collections of similar elements located adjacently in memory. Arrays containing n elements are referenced by indices ranging from 0 to n - 1. As an example, the elements of an array arr[n] containing n elements are denoted as arr[0], arr[1], arr[2], ...., arr[n-1], where 0 is the lower bound and n-1 is the upper bound. In this example, 0, 1, 2, etc., represent array indices.
+
+<p align="center" width="100%">
+<img src="../images/array-indexs.png" alt="array of indexs">
+</p>
+
+An array can be operated upon in several different ways. The following tables provide a list of operations.
+
+| **Operation** | **Description**                                                                                                                                                                                    | 
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Traversal** | Each element of the array is accessed and visited one by one, usually in a loop (e.g., for, while, or forEach).                                                                                    |
+| **Insertion** | A new element is added at a specific position in the array. Some languages require resizing arrays if they are full.                                                                               |
+| **Deletion**  | The removal of an element from an array may be followed by resizing the array or shifting remaining elements to maintain the order of the array.                                                   |
+| **Searching** | Locating an element in an array by its index. Depending on whether the array is sorted, the search can be linear or binary.                                                                        |
+| **Sorting**   | Rearranging the elements of an array in an ascending or descending order. In order to maximize efficiency, sorting algorithms such as **Bubble Sort**, **Merge Sort**, or **Quick Sort** are used. |
+| **Merging**   | Combining two or more arrays into a single array.                                                                                                                                                  |
+| **Reversing** | Reversing the order of the elements in the array, so that the last element becomes the first element and vice versa.                                                                               |
+| **Filtering** | A new array is created with elements that satisfy a predicate function.                                                                                                                            |
+| **Mapping**   | A new array is created by applying a function to each element of the original array.                                                                                                               |
+| **Reducing**  | By repeatedly applying a function, all elements of an array are aggregated into a single value.                                                                                                    |
+
+## Reading from Array
+
+To read an individual element from an array we can choose the position we want to access via an index. In most programming languages, reading or accessing elements of an array involves retrieving the value at a specific index. 
+An array (or list in Python) is an indexed data structure, so accessing any element by its index is usually an **O(1)** operation. 
+
+Because each index of arr is mapped to a **RAM** address, accessing a single element in an array is always instant. In spite of the size of the input array, accessing a single element takes the same amount of time. In terms of time complexity, this operation is considered **O(1)**.
+
+As shown in the image below, an array of integers is represented in memory in the following manner. A specific memory address is assigned to each element of the array, and these addresses increase in multiples of 4 because integers occupy four bytes on average. Additionally, the image shows that each array element has a pointer to its memory address (**ptr_**), and the array is stored consecutively in memory.
+The visualization explains how arrays are stored in contiguous memory blocks, how memory addressing works, and how data type size affects memory allocation.
+
+<p align="center" width="100%">
+<img src="../images/array-with-address-pointer.png" alt="reading values from the array">
+</p>
