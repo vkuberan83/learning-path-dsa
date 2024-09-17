@@ -6,7 +6,7 @@ The array data structure is one of the most commonly used data structures. Array
 An array is a collection of elements that are all of the same data type and are stored in contiguous locations within memory. An array provides random access to elements through the use of an index, which is used to locate elements in an array.
 
 <p align="center" width="100%">
-<img src="../images/array-of-integers.png" alt="array of integers">
+<img src="../../images/arrays/array-of-integers.png" alt="array of integers">
 </p>
 
 ## Where arrays are used?
@@ -23,7 +23,7 @@ Arrays are used in a wide variety of applications. It would take a long time to 
 Arrays are finite collections of similar elements located adjacently in memory. Arrays containing n elements are referenced by indices ranging from 0 to n - 1. As an example, the elements of an array arr[n] containing n elements are denoted as arr[0], arr[1], arr[2], ...., arr[n-1], where 0 is the lower bound and n-1 is the upper bound. In this example, 0, 1, 2, etc., represent array indices.
 
 <p align="center" width="100%">
-<img src="../images/array-indexs.png" alt="array of indexs">
+<img src="../../images/arrays/array-indexs.png" alt="array of indexs">
 </p>
 
 An array can be operated upon in several different ways. The following tables provide a list of operations.
@@ -52,5 +52,28 @@ As shown in the image below, an array of integers is represented in memory in th
 The visualization explains how arrays are stored in contiguous memory blocks, how memory addressing works, and how data type size affects memory allocation.
 
 <p align="center" width="100%">
-<img src="../images/array-with-address-pointer.png" alt="reading values from the array">
+<img src="../../images/arrays/array-with-address-pointer.png" alt="reading values from the array">
+</p>
+
+## Insert Operation on Array
+### <u>Insert at the End of the array</u>
+We can insert an element at the end of the array by placing it in the next available position at the index equal to the array's current length, where the length represents the total number of elements in the array.
+Inserting an element at the end of an array has a time complexity of **O(1)**, assuming that the array has sufficient capacity. This is because the insertion involves placing the new element at the next available index without needing to shift any existing elements.
+
+<p align="center" width="100%">
+<img src="../../images/arrays/insert-at-the-end-of-array.png" alt="insert at the end of array">
+</p>
+
+### <u>Insert at a given index in an array</u>
+
+Whenever an element is inserted at a specific index in an array, the array's structure requires that all elements starting from that index onward must be shifted one position to the right. This shift is necessary to create an empty space at the specified index for the new element. For example, if we insert at index 2 in an array of 5 elements, the elements currently at indices 2, 3, 4, and 5 must all move one step right to indices 3, 4, 5, and 6 respectively.
+
+#### **Time Complexity:**
+
+* Time Complexity: **O(n)**, where n is the number of elements in the array.
+  * In the worst case, if the element is inserted at the beginning of the array, all subsequent elements must be shifted, making the time complexity proportional to the size of the array.
+  * On average, inserting an element anywhere other than the end requires shifting a portion of the array, so the overall complexity remains **O(n)**.
+
+<p align="center" width="100%">
+<img src="../../images/arrays/insert-at-an-index.png" alt="insert at an index">
 </p>
