@@ -1,0 +1,8 @@
+### assets folder
+assets/
+
+### npm modules installed
+/node_modules/
+
+### Ignore the package-lock
+package-lock.json

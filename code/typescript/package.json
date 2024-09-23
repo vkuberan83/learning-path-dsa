@@ -1,0 +1,32 @@
+{
+  "name": "learning-path-dsa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "exec": "node execute-script.js",
+    "lint": "eslint src/**/*.ts",
+    "lint:test": "eslint tests/**/*.ts"
+  },
+  "keywords": [],
+  "author": "Velmurugan Kuberan",
+  "license": "MIT",
+  "description": "Learning Path: DSA",
+  "engines": {
+    "node": ">=20.12.2",
+    "npm": ">=10.5.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.0",
+    "@types/benchmark": "^2.1.5",
+    "@types/jest": "^29.5.13",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "eslint": "^9.11.0",
+    "globals": "^15.9.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.6.0"
+  }
+}
