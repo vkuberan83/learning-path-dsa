@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",  // <-- Add this line to set the base directory
+    "paths": {
+      "*": ["*"] // Optionally map all paths to 'src/*'
+    }
+  },
+  "include": [
+    "src/**/*.ts", // Adjust include to look for source files inside 'src'
+    "tests/**/*.ts" // Include test files
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
