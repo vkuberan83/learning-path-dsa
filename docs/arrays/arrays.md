@@ -2,6 +2,11 @@
 
 The array data structure is one of the most commonly used data structures. Arrays are simple in design but highly reliable in practice, and are used in a wide variety of situations over any other data structure. However, they are not without their problems, which can sometimes adversely affect the system's performance. 
 
+  * [Javascript](./arrays-in-javascript.md)
+  * [PHP](./arrays-in-javascript.md)
+  * [Python](./arrays-in-javascript.md)
+  * [Rust](./arrays-in-javascript.md)
+
 ## What is an Array:
 An array is a collection of elements that are all of the same data type and are stored in contiguous locations within memory. An array provides random access to elements through the use of an index, which is used to locate elements in an array.
 
