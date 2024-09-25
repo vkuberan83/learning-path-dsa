@@ -1,5 +1,5 @@
 export default class TwoSum {
-    twoSumBruteForce(nums: number[], target: number): [number, number] | [] {
+    bruteForce(nums: number[], target: number): [number, number] | [] {
         for (let iCnt: number = 0; iCnt < nums.length; iCnt++) {
             for(let jCnt: number = iCnt + 1; jCnt < nums.length; jCnt++) {
                 if (nums[jCnt] + nums[iCnt] === target) {
@@ -10,7 +10,7 @@ export default class TwoSum {
         return [];
     }
 
-    twoSumHashMap(nums: number[], target: number): [number, number] | [] {
+    hashMap(nums: number[], target: number): [number, number] | [] {
         const map: Map<number, number> = new Map();
 
         for (let i: number = 0; i < nums.length; i++) {

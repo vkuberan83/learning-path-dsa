@@ -15,7 +15,7 @@ if (mode === 'test') {
     filePath = `./tests/${name}/${name}.test.ts`;
     filePathForPerformance = `./tests/${name}/${name}.performance.ts`;
 } else if (mode === 'run') {
-    filePath = `./src/${name}/${name}.ts`;
+    filePath = `./src/${name}/${name}.index.ts`;
 } else {
     console.error("Invalid mode. Use 'test' to run tests or 'run' to run a script.");
     process.exit(1);
