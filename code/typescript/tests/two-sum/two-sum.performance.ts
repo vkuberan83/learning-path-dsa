@@ -32,12 +32,12 @@ function runPerformanceTests() {
 
         console.log(`Array size: ${size}`);
 
-        measureExecutionTime('Brute Force', () => {
-            twoSum.twoSumBruteForce(nums, target);
+        measureExecutionTime('Using Brute Force Algorithm', () => {
+            twoSum.bruteForce(nums, target);
         });
 
-        measureExecutionTime('Hash Map', () => {
-            twoSum.twoSumHashMap(nums, target);
+        measureExecutionTime('Using HashMap Algorithm', () => {
+            twoSum.hashMap(nums, target);
         });
 
         console.log('\n');
